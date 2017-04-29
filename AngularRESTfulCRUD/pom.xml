@@ -13,7 +13,8 @@
 			<url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
 		</repository>
 	</repositories>
-	
+
+	<!-- UNIT TEST -->
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -21,6 +22,8 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- MOCK TO UNIT TESTS -->
 		<dependency>
 			<groupId>org.powermock</groupId>
 			<artifactId>powermock-module-junit4</artifactId>
@@ -36,7 +39,8 @@
 			<artifactId>json</artifactId>
 			<version>20140107</version>
 		</dependency>
-		
+
+		<!-- REST IMPLEMENTATION -->
 		<dependency>
 			<groupId>org.jboss.resteasy</groupId>
 			<artifactId>resteasy-jaxrs</artifactId>
@@ -48,6 +52,29 @@
 			<artifactId>resteasy-jackson-provider</artifactId>
 			<version>2.2.1.GA</version>
 		</dependency>
+
+		<!-- Hibernate -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.2.9.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>5.2.9.Final</version>
+		</dependency>
+
+		<!-- DRIVER DB -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.4.1212</version>
+		</dependency>
+
+
+
 	</dependencies>
 	<build>
 		<finalName>AngularRESTfulCRUD</finalName>

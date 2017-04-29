@@ -1,13 +1,29 @@
 package br.com.svitorroberto.modelo;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="curso")
 public class Curso {
 	
+	@Id
+	@Column(name="id")
 	private Long id;
+	
+	@Column(name="nome")
 	private String nome;
+	
+	@Column(name="periodo")
 	private String periodo;
+	
+	@Column(name="situacao")
 	private char situacao;
 	
 
+	
 	public Curso(Long id, String nome,String periodo,char situacao){
 		this.id = id;
 		this.nome = nome;
